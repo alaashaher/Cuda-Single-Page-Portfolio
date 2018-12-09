@@ -1,5 +1,5 @@
 {
-  "name": "Cuda Single Page Protolio",
+  "name": "CudaSinglePageProtolio",
   "version": "",
   "dependencies": {
     "gulp-autoprefixer": "^6.0.0",
@@ -8,7 +8,8 @@
     "gulp-pug": "^4.0.1",
     "gulp-ruby-sass": "^4.0.0",
     "gulp-sass": "^4.0.2",
-    "gulp-watch": "^5.0.1"
+    "gulp-watch": "^5.0.1",
+    "node-sass": "^4.11.0"
   },
   "devDependencies": {
     "gulp": "^3.9.1",

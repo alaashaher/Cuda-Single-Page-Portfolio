@@ -1,5 +1,5 @@
 const gulp = require('gulp');
-const sass = require('gulp-ruby-sass');
+const sass = require('node-sass');
 const pug = require('gulp-pug');
 const watch = require('gulp-watch');
 const autoprefixer = require('gulp-autoprefixer');
