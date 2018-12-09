@@ -22,6 +22,7 @@ nav {
 .nav-item {
   margin-left: 20px;
   padding: 5px;
+  text-align: center;
 }
 .nav-item:hover {
   background-color: #643a79;
@@ -50,4 +51,23 @@ nav {
   background-color: $mainColor;
   color: #eb7d4b;
   transition: $animation;
+}
+.navbar-toggler {
+  margin-left: 120%;
+  transition: $animation
+}
+@media (max-width:991px){
+  .navbar-nav {
+    z-index: 1000;
+    position: absolute;
+    width: 150px;
+    padding-left: 3%;
+    padding-right: 5%;
+    border-radius: 5px;
+    margin-left: 282px;
+    background-color: #643a79
+  }
+  .nav-item:hover {
+    background-color: $mainBackGroundColor;
+  }
 }

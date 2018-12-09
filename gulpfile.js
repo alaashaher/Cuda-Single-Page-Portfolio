@@ -7,7 +7,7 @@ const connect = require('gulp-connect');
 const concat = require('gulp-concat');
 
 gulp.task('sass', () => {
-    sass('cuda-project/style/*.scss', {
+    gulp.src('cuda-project/style/*.scss', {
         sourcemap: true,
         style: 'compressed'
     })

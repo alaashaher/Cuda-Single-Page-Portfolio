@@ -23,6 +23,7 @@ nav {
 .nav-item {
   margin-left: 20px;
   padding: 5px;
+  text-align: center;
 }
 
 .nav-item:hover {
@@ -56,6 +57,28 @@ nav {
   background-color: #fff;
   color: #eb7d4b;
   transition: all 0.7s ease-in-out;
+}
+
+.navbar-toggler {
+  margin-left: 120%;
+  transition: all 0.7s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .navbar-nav {
+    z-index: 1000;
+    position: absolute;
+    width: 150px;
+    padding-left: 3%;
+    padding-right: 5%;
+    border-radius: 5px;
+    margin-left: 282px;
+    background-color: #643a79;
+  }
+
+  .nav-item:hover {
+    background-color: #87509c;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */
