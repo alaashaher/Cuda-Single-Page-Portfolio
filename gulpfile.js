@@ -6,12 +6,19 @@ const autoprefixer = require('gulp-autoprefixer');
 const connect = require('gulp-connect');
 const concat = require('gulp-concat');
 
-gulp.task('sass', function () {
-  return gulp.src('cuda-project/style/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('dist/css'));
+gulp.task('sass', () => {
+    sass('cuda-project/style/*.scss', {
+        sourcemap: true,
+        style: 'compressed'
+    })
+    .on('error', sass.logError)
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(connect.reload())
 });
-
 gulp.task('pug', () => {
     return gulp.src('cuda-project/pug/*.pug')
         .pipe(pug({
