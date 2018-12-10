@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 header {
   background-color: #87509c;
   font-size: 18px;

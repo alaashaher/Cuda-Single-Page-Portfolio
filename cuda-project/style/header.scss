@@ -1,6 +1,9 @@
 $mainBackGroundColor: #87509c;
 $mainColor: #fff;
 $animation: all .7s ease-in-out;
+body {
+  overflow-x: hidden;
+}
 header {
   background-color: $mainBackGroundColor;
   font-size: 18px;
