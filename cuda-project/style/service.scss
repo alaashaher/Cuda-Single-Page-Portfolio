@@ -6,7 +6,7 @@ $mainColor: rgba(255, 255, 255, 255);
   background-color: $mainBackGroundColor;
   color: $mainColor
 }
-#service hr {
+hr {
   color: #ccc;
   width: 100px;
   height: 1px;
@@ -35,6 +35,14 @@ $mainColor: rgba(255, 255, 255, 255);
   text-align: center;
   margin-top: 20px;
 }
+.service-description h3 a {
+  color: $mainColor
+}
+.service-description h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .service-description p {
   font-size: 15px
 }

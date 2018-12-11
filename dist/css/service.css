@@ -5,7 +5,7 @@
   color: white;
 }
 
-#service hr {
+hr {
   color: #ccc;
   width: 100px;
   height: 1px;
@@ -38,6 +38,15 @@
   width: 100%;
   text-align: center;
   margin-top: 20px;
+}
+
+.service-description h3 a {
+  color: white;
+}
+
+.service-description h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .service-description p {

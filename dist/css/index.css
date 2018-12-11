@@ -91,7 +91,7 @@ nav {
   color: white;
 }
 
-#service hr {
+hr {
   color: #ccc;
   width: 100px;
   height: 1px;
@@ -126,6 +126,15 @@ nav {
   margin-top: 20px;
 }
 
+.service-description h3 a {
+  color: white;
+}
+
+.service-description h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .service-description p {
   font-size: 15px;
 }
@@ -143,6 +152,74 @@ nav {
   .service-image img {
     width: 10%;
   }
+}
+#team {
+  background-color: #e7f1f8;
+}
+
+.team-header {
+  color: #3c4761;
+}
+
+#team {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.team-body-items {
+  margin-top: 40px;
+}
+
+.team-description {
+  margin-top: 30px;
+}
+
+.team-description h3 a {
+  color: #27283d;
+  font-size: 25px;
+}
+
+.team-description h6 a {
+  color: #30bae7;
+  font-weight: 100;
+}
+
+.team-description p {
+  color: #3c4761;
+  font-size: 14px;
+}
+
+.team-image {
+  height: 150px;
+  width: 150px;
+  margin-left: 15%;
+}
+
+.team {
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -44%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  opacity: 0;
+}
+
+.team-image a:hover .team {
+  transition: all 0.7s ease-in-out;
+  opacity: 1;
+}
+
+.teamMediaIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #bdd1df;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.teamMedia a {
+  margin-left: 10px;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -1,0 +1,61 @@
+%mainBackGroundColor {
+  background-color: #e7f1f8;
+}
+%mainColor {
+  color: rgba(60, 71, 97, 255);
+}
+#team {
+  @extend %mainBackGroundColor;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+.team-header {
+  @extend %mainColor;
+}
+.team-body-items {
+  margin-top: 40px;
+}
+.team-description {
+  margin-top: 30px;
+}
+.team-description h3 a {
+  color: rgba(39, 40, 61, 255);
+  font-size: 25px;
+}
+.team-description h6 a {
+  color: rgba(48, 186, 231, 255);
+  font-weight: 100;
+}
+.team-description p {
+  color: rgba(60, 71, 97, 255);
+  font-size: 14px;
+}
+.team-image {
+  height: 150px;
+  width: 150px;
+  margin-left: 15%;
+}
+.team {
+  position: absolute;
+  margin-left: -15%;
+  margin-top: -44%;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  opacity: 0
+}
+.team-image a:hover .team {
+  transition: all .7s ease-in-out;
+  opacity: 1;
+}
+.teamMediaIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #bdd1df;
+  border-radius: 50%;
+  display: inline-block;
+}
+.teamMedia a {
+  margin-left: 10px;
+
+}
