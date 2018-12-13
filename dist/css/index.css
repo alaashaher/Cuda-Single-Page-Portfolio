@@ -107,6 +107,11 @@ hr {
   height: 80px;
 }
 
+#service h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .service-image img {
   width: 30%;
   height: 100%;
@@ -166,6 +171,11 @@ hr {
   padding-top: 50px;
 }
 
+#team h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .team-body-items {
   margin-top: 40px;
 }
@@ -220,6 +230,72 @@ hr {
 
 .teamMedia a {
   margin-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .team-image {
+    margin-top: 5%;
+    margin-left: 21%;
+  }
+
+  .team {
+    margin-top: -36%;
+    margin-left: -10%;
+  }
+}
+@media (max-width: 767px) {
+  .team-image {
+    margin-top: 5%;
+    margin-left: 33%;
+  }
+
+  .team {
+    margin-top: -19%;
+    margin-left: -3%;
+  }
+}
+#people {
+  background-color: #d74680;
+}
+
+.people-description a h5, .people-description, #people h3, #people p {
+  color: #fff;
+}
+
+#people {
+  padding: 5% 3%;
+}
+
+#people h3:hover {
+  pointer: cursor;
+  text-decoration: underline;
+}
+
+.people-body-items {
+  margin-top: 5%;
+}
+
+.people-body-item {
+  margin-top: 5%;
+}
+
+.people-image {
+  width: 120px;
+  height: 120px;
+}
+
+.people-description {
+  margin-top: -17%;
+  text-align: left;
+  margin-left: 27%;
+}
+
+.people-description a h5 {
+  margin-top: 20px;
+}
+
+.people-description a h6 {
+  color: #fcd397;
 }
 
 /*# sourceMappingURL=index.css.map */

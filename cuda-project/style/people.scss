@@ -1,0 +1,40 @@
+%mainPeopleBackGroundColor {
+  background-color: #d74680;
+}
+%mainPeopleColor {
+  color: #fff;
+}
+#people {
+  @extend %mainPeopleBackGroundColor;
+  padding: 5% 3%;
+}
+#people h3, #people p {
+  @extend %mainPeopleColor;
+}
+#people h3:hover {
+  pointer: cursor;
+  text-decoration: underline;
+}
+.people-body-items{
+  margin-top: 5%;
+}
+.people-body-item{
+  margin-top: 5%;
+}
+.people-image {
+  width: 120px;
+  height: 120px;
+}
+.people-description {
+  margin-top: -17%;
+  text-align: left;
+  margin-left: 27%;
+  @extend %mainPeopleColor;
+}
+.people-description a h5 {
+  @extend %mainPeopleColor;
+  margin-top: 20px;
+}
+.people-description a h6{
+  color: #fcd397;
+}

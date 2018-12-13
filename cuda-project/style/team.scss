@@ -9,6 +9,10 @@
   padding-bottom: 50px;
   padding-top: 50px;
 }
+#team h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
 .team-header {
   @extend %mainColor;
 }
@@ -57,5 +61,24 @@
 }
 .teamMedia a {
   margin-left: 10px;
-
+}
+@media (min-width:768px) and (max-width:991px) {
+  .team-image {
+    margin-top: 5%;
+    margin-left: 21%;
+  }
+  .team {
+    margin-top: -36%;
+    margin-left: -10%;
+  }
+}
+@media (max-width:767px){
+  .team-image {
+    margin-top: 5%;
+    margin-left: 33%;
+  }
+  .team {
+    margin-top: -19%;
+    margin-left: -3%;
+  }
 }
