@@ -4,6 +4,12 @@ $animation: all .7s ease-in-out;
 body {
   overflow-x: hidden;
 }
+%transfomation {
+  -webkit-transition: all .7s ease-in-out;
+  -moz-transition: all .7s ease-in-out;
+  -o-transition: all .7s ease-in-out;
+  transition: all .7s ease-in-out;
+}
 header {
   background-color: $mainBackGroundColor;
   font-size: 18px;
@@ -49,6 +55,7 @@ nav {
   border-radius: 5px;
   outline: none;
   cursor: pointer;
+  @extend %transfomation;
 }
 .work:hover {
   background-color: $mainColor;
