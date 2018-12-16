@@ -58,9 +58,15 @@
   padding: 1.5% 4%;
   @extend %transfomation;
   color: #fff;
-  cursor: pointer;
 }
 .loadmorebtn:hover {
   background-color: #fff;
   color: #17c2a4;
+}
+.project p {
+  font-size: 18px;
+}
+.project p:hover  {
+  cursor: pointer;
+  text-decoration: underline;
 }
