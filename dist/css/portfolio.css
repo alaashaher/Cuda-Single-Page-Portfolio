@@ -1,34 +1,37 @@
-%mainPortoflioBackGround {
+#portfolio {
   background-color: #ffdd99;
 }
-%transfomation {
+
+.loadmorebtn, .pic .holder .preview img {
   -webkit-transition: 5s ease-in-out;
   -moz-transition: 5s ease-in-out;
   -o-transition: 5s ease-in-out;
   transition: 5s ease-in-out;
 }
-%mainPortoflioColor{
+
+.portfolio-header h2, .portfolio-header p {
   color: #393939;
 }
+
 #portfolio {
   padding: 7% 5%;
-  @extend %mainPortoflioBackGround;
 }
-.portfolio-header h2 , .portfolio-header p {
-  @extend %mainPortoflioColor;
-}
+
 .portfolio-header h2:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
 .portfolio-body-item {
   margin-top: 5%;
   float: left;
 }
+
 .tab {
   padding-top: 2%;
   padding-bottom: 1%;
 }
+
 .tab button {
   background-color: inherit;
   display: inline-block;
@@ -42,55 +45,66 @@
   font-size: 17px;
   color: #5d5648;
 }
+
 .tab button:hover {
-    background-color: #fff;
+  background-color: #fff;
 }
+
 .tab button.active {
-    background-color: #fff;
+  background-color: #fff;
 }
-.holder img  {
+
+.holder img {
   width: 400px;
   height: 250px;
 }
-.pic .holder{
-    width: 400px;
-    height: 250px;
-    margin: auto;
-    text-align: center;
-    position: relative;
-    background-repeat: no-repeat
+
+.pic .holder {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
 }
+
 .pic .holder .preview {
-    position: absolute;
-    width: 276px;
-    height: 182px;
-    left: 61px;
-    top: 22px;
-    overflow: hidden
+  position: absolute;
+  width: 276px;
+  height: 182px;
+  left: 61px;
+  top: 22px;
+  overflow: hidden;
 }
-.pic .holder .preview img{
-    width: 100%;
-    margin-top: 0;
-    @extend %transfomation;
+
+.pic .holder .preview img {
+  width: 100%;
+  margin-top: 0;
 }
-.pic .holder .preview:hover img{
-    margin-top: -506px
+
+.pic .holder .preview:hover img {
+  margin-top: -506px;
 }
+
 .loadmorebtn {
   background-color: #17c2a4;
   margin-top: 60px;
   padding: 1.5% 4%;
-  @extend %transfomation;
   color: #fff;
 }
+
 .loadmorebtn:hover {
   background-color: #fff;
   color: #17c2a4;
 }
+
 .project p {
   font-size: 18px;
 }
-.project p:hover  {
+
+.project p:hover {
   cursor: pointer;
   text-decoration: underline;
 }
+
+/*# sourceMappingURL=portfolio.css.map */
