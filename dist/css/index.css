@@ -2,6 +2,13 @@ body {
   overflow-x: hidden;
 }
 
+.loadmorebtn, .pic .holder .preview img, .work {
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
 header {
   background-color: #87509c;
   font-size: 18px;
@@ -266,13 +273,13 @@ hr {
   padding: 5% 3%;
 }
 
-#people h3:hover {
-  pointer: cursor;
+.people-header h3:hover {
+  cursor: pointer;
   text-decoration: underline;
 }
 
 .people-body-items {
-  margin-top: 5%;
+  margin-top: 0%;
 }
 
 .people-body-item {
@@ -282,6 +289,21 @@ hr {
 .people-image {
   width: 120px;
   height: 120px;
+}
+
+.people-image a {
+  text-decoration: none;
+}
+
+.people-image h5 {
+  color: #fff;
+  margin-top: -70%;
+  opacity: 0;
+}
+
+.people-image:hover h5 {
+  opacity: 1;
+  transition: all 0.7s ease-in-out;
 }
 
 .people-description {
@@ -296,6 +318,120 @@ hr {
 
 .people-description a h6 {
   color: #fcd397;
+}
+
+@media (max-width: 991px) {
+  .people-body-item {
+    margin-left: 20%;
+    margin-top: 10%;
+  }
+}
+#portfolio {
+  background-color: #ffdd99;
+}
+
+.loadmorebtn, .pic .holder .preview img, .work {
+  -webkit-transition: 5s ease-in-out;
+  -moz-transition: 5s ease-in-out;
+  -o-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+}
+
+.portfolio-header h2, .portfolio-header p {
+  color: #393939;
+}
+
+#portfolio {
+  padding: 7% 5%;
+}
+
+.portfolio-header h2:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.portfolio-body-item {
+  margin-top: 5%;
+}
+
+.tab {
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+.tab button {
+  background-color: inherit;
+  display: inline-block;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #ebc985;
+  cursor: pointer;
+  padding: 4px 10px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #5d5648;
+}
+
+.tab button:hover {
+  background-color: #fff;
+}
+
+.tab button.active {
+  background-color: #fff;
+}
+
+.holder img {
+  width: 400px;
+  height: 250px;
+}
+
+.pic .holder {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+.pic .holder .preview {
+  position: absolute;
+  width: 276px;
+  height: 182px;
+  left: 61px;
+  top: 22px;
+  overflow: hidden;
+}
+
+.pic .holder .preview img {
+  width: 100%;
+  margin-top: 0;
+}
+
+.pic .holder .preview:hover img {
+  margin-top: -506px;
+}
+
+.loadmorebtn {
+  background-color: #17c2a4;
+  margin-top: 60px;
+  padding: 1.5% 4%;
+  color: #fff;
+}
+
+.loadmorebtn:hover {
+  background-color: #fff;
+  color: #17c2a4;
+}
+
+.project p {
+  font-size: 18px;
+}
+
+.project p:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=index.css.map */
