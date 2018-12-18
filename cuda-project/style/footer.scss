@@ -1,0 +1,71 @@
+%transfomation {
+  -webkit-transition: 5s ease-in-out;
+  -moz-transition: 5s ease-in-out;
+  -o-transition: 5s ease-in-out;
+  transition: 5s ease-in-out;
+}
+#footer {
+  background-color: #3c5499;
+  color: #fff;
+  padding: 8% 8%;
+}
+#footer hr {
+  background-color: #273a71
+}
+.formdiv {
+  width: 100%;
+  margin-top: 20px;
+}
+.siteForm input {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #273a71;
+  color: #fff;
+  padding-left: 2%;
+  width: 37%;
+  height: 50px;
+  margin-left: 20px;
+}
+textarea {
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #273a71;
+  color: #fff;
+  padding-left: 2% !important;
+  padding-top: 2% !important;
+  width: 69% !important;
+  margin-top: 10px;
+  height: 182px;
+  margin-left: 20px;
+}
+.sendMessage {
+  padding: 1.5% 4%;
+  background-color: #30bae7;
+  color: #ffffff;
+  @extend %transfomation;
+}
+
+.sendMessage:hover {
+  background-color: #fff;
+  color: #30bae7;
+}
+.sendMessagebtn{
+  margin-top: 20px
+}
+.icons {
+  background-color: #344b8e;
+}
+.iconDiv{
+  padding: 2% 4%;
+}
+.iconDiv a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 73px;
+}
+.iconDiv a:hover {
+  color: #30bae7;
+}
